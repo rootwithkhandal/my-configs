@@ -25,14 +25,14 @@
   # ── Hyprland ──────────────────────────────
   programs.hyprland = {
     enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     xwayland.enable = true;
   };
 
   # ── niri ──────────────────────────────────
   programs.niri = {
     enable = true;
-    package = inputs.niri.packages.${pkgs.system}.niri;
+    package = inputs.niri.packages.${pkgs.stdenv.hostPlatform.system}.niri;
   };
 
   # ── XDG Portals (FIXED) ───────────────────
@@ -59,7 +59,7 @@
     dunst
 
     # Wallpaper
-    swww
+    awww
     hyprpaper
 
     # Screen lock

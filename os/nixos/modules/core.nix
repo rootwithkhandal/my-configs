@@ -93,7 +93,7 @@
   programs.neovim.enable = true;
 
   # Allow unfree (Burp Suite, IDA Free, etc.)
-  nixpkgs.config.allowUnfree = true;
+  # nixpkgs.config.allowUnfree = true;
 
   # ── Nix settings ──────────────────────────
   nix = {
