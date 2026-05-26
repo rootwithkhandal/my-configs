@@ -7,3 +7,426 @@ private/
 **/secrets.nix
 docs/install.log
 old-dots/
+# ================================
+# Python & Development
+# ================================
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyc
+*.pyo
+
+# Python distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Python type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Python debug symbols
+cython_debug/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ================================
+# IDE & Editors
+# ================================
+
+# VSCode
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Vim/Neovim
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ================================
+# Operating Systems
+# ================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ================================
+# Logs & Temporary Files
+# ================================
+
+# Application logs
+*.log
+logs/
+*.log.*
+
+# Keep install.log for debugging but don't commit
+install.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+
+# ================================
+# Configuration & Secrets
+# ================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Local configuration overrides
+config/local.yaml
+config/*.local.yaml
+
+# Personal notes and scratch files
+notes.md
+TODO.md
+scratch/
+personal/
+
+# ================================
+# Application Runtime Data
+# ================================
+
+# SSH (never commit private keys)
+stow/ssh/.ssh/
+
+# Icons cache
+stow/icons/.local/share/icons*
+
+# ================================
+# VSCode Runtime (Linux)
+# ================================
+
+stow/vscode/.config/Code/Backups/
+stow/vscode/.config/Code/blob_storage/
+stow/vscode/.config/Code/Cache/
+stow/vscode/.config/Code/CachedConfigurations/
+stow/vscode/.config/Code/CachedData/
+stow/vscode/.config/Code/CachedExtensionVSIXs/
+stow/vscode/.config/Code/CachedProfilesData/
+stow/vscode/.config/Code/Code\ Cache/
+stow/vscode/.config/Code/Crashpad/
+stow/vscode/.config/Code/DawnGraphiteCache/
+stow/vscode/.config/Code/DawnWebGPUCache/
+stow/vscode/.config/Code/Dictionaries/
+stow/vscode/.config/Code/GPUCache/
+stow/vscode/.config/Code/Local\ Storage/
+stow/vscode/.config/Code/logs/
+stow/vscode/.config/Code/Session\ Storage/
+stow/vscode/.config/Code/Shared\ Dictionary/
+stow/vscode/.config/Code/*Cache*/
+stow/vscode/.config/Code/User/globalStorage/
+stow/vscode/.config/Code/User/History/
+stow/vscode/.config/Code/User/snippets/
+stow/vscode/.config/Code/User/workspaceStorage/
+
+# VSCode state files
+stow/vscode/.config/Code/code.lock
+stow/vscode/.config/Code/Cookies*
+stow/vscode/.config/Code/DIPS*
+stow/vscode/.config/Code/languagepacks.json
+stow/vscode/.config/Code/machineid
+stow/vscode/.config/Code/Network\ Persistent\ State
+stow/vscode/.config/Code/Preferences
+stow/vscode/.config/Code/SharedStorage*
+stow/vscode/.config/Code/TransportSecurity
+stow/vscode/.config/Code/Trust*
+
+# ================================
+# Kiro Runtime (Linux)
+# ================================
+
+stow/kiro/.config/Kiro/Backups/
+stow/kiro/.config/Kiro/blob_storage/
+stow/kiro/.config/Kiro/Cache/
+stow/kiro/.config/Kiro/CachedConfigurations/
+stow/kiro/.config/Kiro/CachedData/
+stow/kiro/.config/Kiro/CachedExtensionVSIXs/
+stow/kiro/.config/Kiro/CachedProfilesData/
+stow/kiro/.config/Kiro/Code\ Cache/
+stow/kiro/.config/Kiro/Crashpad/
+stow/kiro/.config/Kiro/DawnGraphiteCache/
+stow/kiro/.config/Kiro/DawnWebGPUCache/
+stow/kiro/.config/Kiro/Dictionaries/
+stow/kiro/.config/Kiro/GPUCache/
+stow/kiro/.config/Kiro/Local\ Storage/
+stow/kiro/.config/Kiro/logs/
+stow/kiro/.config/Kiro/Session\ Storage/
+stow/kiro/.config/Kiro/Shared\ Dictionary/
+stow/kiro/.config/Kiro/*Cache*/
+stow/kiro/.config/Kiro/User/globalStorage/
+stow/kiro/.config/Kiro/User/History/
+stow/kiro/.config/Kiro/User/snippets/
+stow/kiro/.config/Kiro/User/workspaceStorage/
+stow/kiro/.kiro/
+
+# Kiro state files
+stow/kiro/.config/Kiro/code.lock
+stow/kiro/.config/Kiro/Cookies*
+stow/kiro/.config/Kiro/DIPS*
+stow/kiro/.config/Kiro/languagepacks.json
+stow/kiro/.config/Kiro/machineid
+stow/kiro/.config/Kiro/Network\ Persistent\ State
+stow/kiro/.config/Kiro/Preferences
+stow/kiro/.config/Kiro/SharedStorage*
+stow/kiro/.config/Kiro/TransportSecurity
+stow/kiro/.config/Kiro/Trust*
+
+# ================================
+# Cursor Runtime (Linux)
+# ================================
+
+stow/cursor/.config/Cursor/User/globalStorage/
+stow/cursor/.config/Cursor/User/History/
+stow/cursor/.config/Cursor/User/snippets/
+stow/cursor/.config/Cursor/User/workspaceStorage/
+
+# ================================
+# Antigravity Runtime (Linux)
+# ================================
+
+stow/antigravity/.config/Antigravity/Backups/
+stow/antigravity/.config/Antigravity/blob_storage/
+stow/antigravity/.config/Antigravity/Cache/
+stow/antigravity/.config/Antigravity/CachedConfigurations/
+stow/antigravity/.config/Antigravity/CachedData/
+stow/antigravity/.config/Antigravity/CachedExtensionVSIXs/
+stow/antigravity/.config/Antigravity/CachedProfilesData/
+stow/antigravity/.config/Antigravity/Code\ Cache/
+stow/antigravity/.config/Antigravity/Crashpad/
+stow/antigravity/.config/Antigravity/DawnGraphiteCache/
+stow/antigravity/.config/Antigravity/DawnWebGPUCache/
+stow/antigravity/.config/Antigravity/Dictionaries/
+stow/antigravity/.config/Antigravity/GPUCache/
+stow/antigravity/.config/Antigravity/Local\ Storage/
+stow/antigravity/.config/Antigravity/logs/
+stow/antigravity/.config/Antigravity/Session\ Storage/
+stow/antigravity/.config/Antigravity/Shared\ Dictionary/
+stow/antigravity/.config/Antigravity/*Cache*/
+stow/antigravity/.config/Antigravity/User/globalStorage/
+stow/antigravity/.config/Antigravity/User/History/
+stow/antigravity/.config/Antigravity/User/snippets/
+stow/antigravity/.config/Antigravity/User/workspaceStorage/
+stow/antigravity/.gemini/
+stow/antigravity/.antigravity/
+
+# Antigravity state files
+stow/antigravity/.config/Antigravity/code.lock
+stow/antigravity/.config/Antigravity/Cookies*
+stow/antigravity/.config/Antigravity/DIPS*
+stow/antigravity/.config/Antigravity/languagepacks.json
+stow/antigravity/.config/Antigravity/machineid
+stow/antigravity/.config/Antigravity/Network\ Persistent\ State
+stow/antigravity/.config/Antigravity/Preferences
+stow/antigravity/.config/Antigravity/SharedStorage*
+stow/antigravity/.config/Antigravity/TransportSecurity
+stow/antigravity/.config/Antigravity/Trust*
+
+# ================================
+# Windows Stow Files
+# ================================
+
+# Windows VSCode runtime
+stow-win/vscode/AppData/Roaming/Code/Backups/
+stow-win/vscode/AppData/Roaming/Code/blob_storage/
+stow-win/vscode/AppData/Roaming/Code/Cache/
+stow-win/vscode/AppData/Roaming/Code/CachedConfigurations/
+stow-win/vscode/AppData/Roaming/Code/CachedData/
+stow-win/vscode/AppData/Roaming/Code/CachedExtensionVSIXs/
+stow-win/vscode/AppData/Roaming/Code/CachedProfilesData/
+stow-win/vscode/AppData/Roaming/Code/Code\ Cache/
+stow-win/vscode/AppData/Roaming/Code/Crashpad/
+stow-win/vscode/AppData/Roaming/Code/DawnGraphiteCache/
+stow-win/vscode/AppData/Roaming/Code/DawnWebGPUCache/
+stow-win/vscode/AppData/Roaming/Code/GPUCache/
+stow-win/vscode/AppData/Roaming/Code/Local\ Storage/
+stow-win/vscode/AppData/Roaming/Code/logs/
+stow-win/vscode/AppData/Roaming/Code/Session\ Storage/
+stow-win/vscode/AppData/Roaming/Code/User/globalStorage/
+stow-win/vscode/AppData/Roaming/Code/User/History/
+stow-win/vscode/AppData/Roaming/Code/User/workspaceStorage/
+
+# Windows Kiro runtime
+stow-win/kiro/AppData/Roaming/Kiro/Backups/
+stow-win/kiro/AppData/Roaming/Kiro/blob_storage/
+stow-win/kiro/AppData/Roaming/Kiro/Cache/
+stow-win/kiro/AppData/Roaming/Kiro/CachedConfigurations/
+stow-win/kiro/AppData/Roaming/Kiro/CachedData/
+stow-win/kiro/AppData/Roaming/Kiro/CachedExtensionVSIXs/
+stow-win/kiro/AppData/Roaming/Kiro/CachedProfilesData/
+stow-win/kiro/AppData/Roaming/Kiro/Code\ Cache/
+stow-win/kiro/AppData/Roaming/Kiro/Crashpad/
+stow-win/kiro/AppData/Roaming/Kiro/DawnGraphiteCache/
+stow-win/kiro/AppData/Roaming/Kiro/DawnWebGPUCache/
+stow-win/kiro/AppData/Roaming/Kiro/GPUCache/
+stow-win/kiro/AppData/Roaming/Kiro/Local\ Storage/
+stow-win/kiro/AppData/Roaming/Kiro/logs/
+stow-win/kiro/AppData/Roaming/Kiro/Session\ Storage/
+stow-win/kiro/AppData/Roaming/Kiro/User/globalStorage/
+stow-win/kiro/AppData/Roaming/Kiro/User/History/
+stow-win/kiro/AppData/Roaming/Kiro/User/workspaceStorage/
+
+# Windows Cursor runtime
+stow-win/cursor/AppData/Roaming/Cursor/Backups/
+stow-win/cursor/AppData/Roaming/Cursor/blob_storage/
+stow-win/cursor/AppData/Roaming/Cursor/Cache/
+stow-win/cursor/AppData/Roaming/Cursor/CachedConfigurations/
+stow-win/cursor/AppData/Roaming/Cursor/CachedData/
+stow-win/cursor/AppData/Roaming/Cursor/CachedExtensionVSIXs/
+stow-win/cursor/AppData/Roaming/Cursor/CachedProfilesData/
+stow-win/cursor/AppData/Roaming/Cursor/Code\ Cache/
+stow-win/cursor/AppData/Roaming/Cursor/Crashpad/
+stow-win/cursor/AppData/Roaming/Cursor/DawnGraphiteCache/
+stow-win/cursor/AppData/Roaming/Cursor/DawnWebGPUCache/
+stow-win/cursor/AppData/Roaming/Cursor/GPUCache/
+stow-win/cursor/AppData/Roaming/Cursor/Local\ Storage/
+stow-win/cursor/AppData/Roaming/Cursor/logs/
+stow-win/cursor/AppData/Roaming/Cursor/Session\ Storage/
+stow-win/cursor/AppData/Roaming/Cursor/User/globalStorage/
+stow-win/cursor/AppData/Roaming/Cursor/User/History/
+stow-win/cursor/AppData/Roaming/Cursor/User/workspaceStorage/
+
+# Windows Antigravity runtime
+stow-win/antigravity/AppData/Roaming/Antigravity/Backups/
+stow-win/antigravity/AppData/Roaming/Antigravity/blob_storage/
+stow-win/antigravity/AppData/Roaming/Antigravity/Cache/
+stow-win/antigravity/AppData/Roaming/Antigravity/CachedConfigurations/
+stow-win/antigravity/AppData/Roaming/Antigravity/CachedData/
+stow-win/antigravity/AppData/Roaming/Antigravity/CachedExtensionVSIXs/
+stow-win/antigravity/AppData/Roaming/Antigravity/CachedProfilesData/
+stow-win/antigravity/AppData/Roaming/Antigravity/Code\ Cache/
+stow-win/antigravity/AppData/Roaming/Antigravity/Crashpad/
+stow-win/antigravity/AppData/Roaming/Antigravity/DawnGraphiteCache/
+stow-win/antigravity/AppData/Roaming/Antigravity/DawnWebGPUCache/
+stow-win/antigravity/AppData/Roaming/Antigravity/GPUCache/
+stow-win/antigravity/AppData/Roaming/Antigravity/Local\ Storage/
+stow-win/antigravity/AppData/Roaming/Antigravity/logs/
+stow-win/antigravity/AppData/Roaming/Antigravity/Session\ Storage/
+stow-win/antigravity/AppData/Roaming/Antigravity/User/globalStorage/
+stow-win/antigravity/AppData/Roaming/Antigravity/User/History/
+stow-win/antigravity/AppData/Roaming/Antigravity/User/workspaceStorage/
+
+# Windows state files (cookies, preferences, etc.)
+stow-win/*/AppData/Roaming/*/Cookies*
+stow-win/*/AppData/Roaming/*/DIPS*
+stow-win/*/AppData/Roaming/*/Network\ Persistent\ State
+stow-win/*/AppData/Roaming/*/Preferences
+stow-win/*/AppData/Roaming/*/SharedStorage*
+stow-win/*/AppData/Roaming/*/TransportSecurity
+stow-win/*/AppData/Roaming/*/Trust*
+
+# ================================
+# Documentation & Archives
+# ================================
+
+# Generated documentation files
+PRODUCTION_READY.md
+CHANGELOG.md
+PACKAGE_NOTES.md
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS metadata from downloaded font archives
+.DS_Store
+__MACOSX/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+
+
+# temp
+scripts/install-fonts.ps1
+# wezterm/
+# fonts

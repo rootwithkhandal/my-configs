@@ -1,0 +1,28 @@
+[theme]
+name = "iceberg-theme"
+parent = "autumn"
+
+# name = "custom-alert-theme"
+# author = "your-name"
+
+[colors]
+# Alert colors
+AlertInfo = "#B4BE82"     # green
+AlertWarn = "#E2A478"     # yellow
+AlertError = "#E27878"    # red
+
+Guidance = "#E6E6E6"
+Guidance = "#84A0C6" 
+Title = "#84A0C6"
+
+# Optional: Define other UI elements
+# background = "#1E1E2E"
+# foreground = "#D9E0EE"
+# cursor = "#F5C2E7"
+# selection = "#44475A"
+
+# Optional: Customize prompt and command output
+# prompt = "#B4BE82"
+# command = "#F8BD96"
+# search_match = "#F5C2E7"
+

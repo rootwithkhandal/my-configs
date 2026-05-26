@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "0192e9e3a8b4ed58",
+    "type": "split",
+    "children": [
+      {
+        "id": "c26174df73810057",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fcb4ad7a7338b9e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows Setup/Development.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Development"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d3ecaff59f114569",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bf566f87c0beec4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90aea6f5b85e7102",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9632a06bde21a0e5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1de13b7b1c91bfa3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 270.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "7517b519cbbce178",
+    "type": "split",
+    "children": [
+      {
+        "id": "e61ee77e0aed7981",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a56365e64da5500",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "551eb9e292ee652b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "303fa5140586624d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8681395fa10b47fe",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-kanban:Create new board": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "fcb4ad7a7338b9e1",
+  "lastOpenFiles": [
+    "Windows Setup/Blue Team.md",
+    "Windows Setup/Development.md",
+    "Windows Setup/Red Team.md",
+    "MCP Server setup.md",
+    "Learning/IBM CyberSecurity Analyst/Introduction to Information Security and Compliance.pdf",
+    "Windows Setup",
+    "Learning/IBM CyberSecurity Analyst/Cybersecurity Controls.pdf",
+    "Learning/IBM CyberSecurity Analyst/Analyzing TCP and UDP Traffic with Wireshark.pdf",
+    "Network+ing/IP Addressing.md",
+    "Network+ing/attachments/ports+tcpip.png",
+    "Network+ing/attachments/ipv6_header.png",
+    "Network+ing/attachments/ipv4_header.png",
+    "Network+ing/attachments/ipv4.png",
+    "Templates 1/notes.md",
+    "Templates 1/ctf_writeups.md",
+    "Templates 1/bb_report.md",
+    "Templates/bb_report.md",
+    "Templates/ctf_writeups.md",
+    "Templates/notes.md",
+    "Smart India Hackathon Project Decentralized Login & Gen5-Firewall Dashboard.md",
+    "Excali/Drawing 2025-12-24 21.18.09.excalidraw.md",
+    "Excali/Drawing 2025-12-24 21.18.13.excalidraw.md",
+    "Excali",
+    "Learning/IBM CyberSecurity Analyst/IBM Notes.md",
+    "Network+ing/topics.md",
+    "README.md",
+    "BlueTeam/Defense-Frameworks.md",
+    "BlueTeam/Defense-Frameworks",
+    "Network Security/Notes.md",
+    "Network Security/Offensive-Security-Testing.md",
+    "Network Security/Zero-Trust.md",
+    "Network Security/Tunneling.md",
+    "Network Security/VPNs.md",
+    "Network Security/VPNs",
+    "Network Security/IDS-IPS.md",
+    "Network Security/Firewalls.md",
+    "Tools/Notes.md",
+    "BlueTeam/Detection-",
+    "Projects Walkthrough",
+    "Network Security",
+    "Network+ing/attachments/socket.png",
+    "Network+ing/attachments/ports.png",
+    "Network+ing/attachments/wireshark_ipv6_encoded.png",
+    "Network+ing/attachments/wireshark_ipv6_decoded.png",
+    "Network+ing/attachments/wireshark_ipv4_encoded.png",
+    "Network+ing/attachments/wireshark_ipv4_decoded.png"
+  ]
+}
