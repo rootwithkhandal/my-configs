@@ -1508,7 +1508,7 @@ module.exports = (_ => {
 			yandexTranslate (data, callback) {
 				BDFDB.LibraryRequires.request("https://translate.yandex.net/api/v1.5/tr/translate", {
 					form: {
-						"key": authKeys.yandex && authKeys.yandex.key || "trnsl.1.1.20191206T223907Z.52bd512eca953a5b.1ec123ce4dcab3ae859f312d27cdc8609ab280de",
+						"key": authKeys.yandex && authKeys.yandex.key || "your-key",
 						"text": encodeURIComponent(data.text),
 						"lang": data.specialCase || data.input.auto ? data.output.id : (data.input.id + "-" + data.output.id),
 						"options": "1"
