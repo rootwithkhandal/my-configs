@@ -5,17 +5,34 @@
 
 {
   # ── Bootloader ────────────────────────────
-  boot.loader.systemd-boot.enable      = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot = {
+    loader = {
+      systemd-boot.enable = false;
+      efi.canTouchEfiVariables = true;
+      grub = {
+        enable = true;
+        configurationLimit = 3;
+        efiSupport = true;
+        device = "nodev";
+        theme = pkgs.catppuccin-grub;
+        gfxmodeEfi = "1920x1080";
+      };
+    };
+    kernelPackages = pkgs.linuxPackages_latest;
+  };
+  #boot.loader.systemd-boot.enable      = true;
+  #boot.loader.efi.canTouchEfiVariables = true;
 
   # Latest kernel — required for modern hardware & some RE tools
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  #boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Extra kernel modules useful for analysis / forensics
   boot.kernelModules = [ "loop" "nbd" "vhci-hcd" ];
 
+  #boot.loader.grub.configurationLimit = 3;
+
   # ── Locale / Time ─────────────────────────
-  time.timeZone                  = "UTC";   # keep timestamps forensically clean
+  time.timeZone                  = "Asia/Kolkata";   # keep timestamps forensically clean
   i18n.defaultLocale             = "en_US.UTF-8";
 
   # ── User ──────────────────────────────────
@@ -44,7 +61,7 @@
     htop btop fastfetch unzip p7zip file hexyl
 
     # Editors
-    neovim vscode
+    neovim vscode zed-editor
 
     # Network basics (non-security)
     iproute2 traceroute bind dnsutils
@@ -54,6 +71,12 @@
 
     # Clipboard / notifications (multi-DE safe)
     wl-clipboard libnotify
+
+    # cursors
+    rose-pine-cursor apple-cursor
+
+    # gnome
+    gnome-tweaks gnome-extension-manager
   ];
 
   # ── Fonts ─────────────────────────────────
@@ -80,10 +103,16 @@
     };
     gc = {
       automatic = true;
-      dates     = "weekly";
-      options   = "--delete-older-than 14d";
+      dates     = "daily";
+      options   = "--delete-older-than 3d";
     };
   };
 
   system.stateVersion = "24.11";
+
+  # ── Catppuccin TTY (systemd-boot renders here) ────
+  catppuccin.tty = {
+    enable = true;
+    flavor = "mocha";   # or: latte / frappe / macchiato
+  };
 }
