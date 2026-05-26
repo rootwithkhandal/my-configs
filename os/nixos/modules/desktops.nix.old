@@ -1,0 +1,89 @@
+# ─────────────────────────────────────────────
+#  desktops.nix — niri + Hyprland + GNOME
+#  All three DEs available at login; pick one
+#  from the display manager session selector.
+# ─────────────────────────────────────────────
+{ config, pkgs, inputs, ... }:
+
+{
+  # ── Display Manager (GDM works across all 3) ──
+  services.xserver.enable             = true;
+  services.displayManager.gdm.enable  = true;
+  # services.displayManager.gdm.wayland = true;
+
+  # ── GNOME ─────────────────────────────────
+  services.desktopManager.gnome.enable = true;
+
+  # Remove default GNOME bloat
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-tour gnome-maps gnome-contacts gnome-weather
+    gnome-music totem cheese
+  ];
+
+  # ── Hyprland ──────────────────────────────
+  programs.hyprland = {
+    enable            = true;
+    package           = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    xwayland.enable   = true;
+  };
+
+  # ── niri ──────────────────────────────────
+  # niri is a scrollable-tiling Wayland compositor
+  programs.niri = {
+    enable  = true;
+    package = inputs.niri.packages.${pkgs.system}.niri;
+  };
+
+  # ── Shared Wayland / XDG ──────────────────
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-hyprland
+    ];
+  };
+
+  # ── Status bars / launchers (system deps) ─
+  environment.systemPackages = with pkgs; [
+    # Bars
+    waybar eww
+
+    # Launchers
+    rofi wofi fuzzel
+
+    # Notifications
+    mako dunst
+
+    # Wallpaper
+    swww hyprpaper
+
+    # Screen lock
+    swaylock-effects hyprlock
+
+    # Screenshots
+    grim slurp satty swappy
+
+    # Clipboard
+    wl-clipboard cliphist
+
+    # Audio
+    pavucontrol wireplumber pipewire
+
+    # Theme / appearance
+    gtk3 gtk4 gnome-themes-extra papirus-icon-theme
+    catppuccin-gtk
+
+    # Gnome Extensions
+    gnomeExtensions.appindicator
+    gnomeExtensions.dash-to-panel
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.just-perfection
+  ];
+
+  # ── Pipewire audio ────────────────────────
+  security.rtkit.enable                  = true;
+  services.pipewire.enable               = true;
+  services.pipewire.alsa.enable          = true;
+  services.pipewire.pulse.enable         = true;
+  services.pipewire.jack.enable          = true;
+}

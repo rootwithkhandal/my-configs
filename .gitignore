@@ -1,0 +1,9 @@
+private/
+*.secret
+*.key
+.env
+**/.env
+**/secrets.sh
+**/secrets.nix
+docs/install.log
+old-dots/
